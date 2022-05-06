@@ -23,7 +23,7 @@ body{
 .grid{
     display: grid;
     width: 1150px;
-    margin: 50px auto;
+    margin: 100px auto;
     grid-template-columns: 
     "endereco pc pc pc"
     ;
@@ -134,7 +134,7 @@ body{
     background-color:#14233a;
     color: #ffffff;
     border-radius: 30px 30px 0 0 ;
-    padding-top: 14px;
+    padding-top: 7px;
 }
 .plano h2{
     font-size: medium;
@@ -275,27 +275,40 @@ body{
     grid-area: cartao;
 }
 .cartao{
-    padding:10px 20px;
+    padding:5px 20px;
+}
+.cartao input{
+    margin-top: 5px;
 }
 .cartao p{
+    
     display: inline;
     font-size: 14px;
 }
 .input-text-cartao{
     background-color: #ffffff;
     border: #ec7200 1px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     padding:10px 20px;
     width: 150px;
     display: block;
 }
 .div-text-cartao{
-    width: 45%;
+    width: 48%;
     display: inline-block;
+    margin:10px 0 10px 0;
+}
+.h2-select{
+    height: 30px;
+    margin-bottom: 20px;
 }
 .h2-select h2{
     display: inline-block;
     font-weight: 500;
+    line-height: 30px;
+}
+.dados-cartao input{
+    padding: 10px 20px;
 }
 .h2-select select{
     margin-left: 100px;
@@ -306,6 +319,7 @@ body{
     display: inline-block;
     box-shadow: #ec720013 1px 1px 4px 4px;
 }
+
 /*caixa1*/
 
 /*footer*/
