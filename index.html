@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--Folha de estilo-->
+    <link rel="stylesheet" href="estilos/style.css">
+    <!--jquey-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Dados - LigDoctor 24 horas</title>
+</head>
+<body>
+    <header>
+        <div class="menu-desktop">
+            <div class="menu-content">
+                <a href="https://ligdoctor.com.br/"><img src="img/logo.png"width="200px"height="50px" alt="logo"></a>
+            </div>
+        </div>
+    </header>
+    
+        <div class="grid">
+            <div class="endereco">
+                <div class="endereco-content">
+                    <form>
+                        <h2>Preencha os dados</h2>
+                        <div class="input-text-dados2">
+                            <p>Cidade<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Ex: Goiânia...">
+                        </div>
+                        <div class="input-text-dados3">
+                            <p>Número<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Ex: 123...">
+                        </div>
+                        <div class="input-text-dados2">
+                            <p>Bairro<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Ex: Goiânia...">
+                        </div>
+                        <div class="input-text-dados3">
+                            <p>Complemento<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Ex: apt.00...">
+                        </div>
+                        <div>
+                        <p>CEP<div class="asterisco"> *</div></p>
+                        <input type="text" class="input-text-dados" placeholder="Ex: 00000-000...">
+                        </div>
+                        <div class="input-text-dados2">
+                            <p>Cidade<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Ex: Goiânia">
+                        </div>
+                        <div class="input-text-dados3">
+                            <p>UF<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Ex: GO">
+                        </div>
+                    </div>
+                </form>
+                <div class="termos">
+                    
+                    <p><input type="checkbox" name="termos" id="termos">Li e aceito os termos e condições de uso. Ao clicar em "contratar plano", concordo com as clausulas contratuais para acessar o serviço. Você pode solicitar o cancelamento da sua assinatura na aba "Planos"em sua conta no app. O cancelamento está sujeito a multas e condições previstas em contrato.</p>
+                </div>
+                
+            </div>
+
+        
+                <div class="w23 visivel" id="elemento-plano1">
+                    <div class="desc">
+                    <div class="plano"><h2>LIGDOCTOR CHAT</h2></div>
+                    
+                    <p class="preco">R$ 19,90/mês por</p>
+                    <p class="contrato-anual">R$ 16,90/mês</p>
+                    <p class="sub-contrato">Contrato Anual</p>
+                    <p class="titulares">1 usuário titular</p>
+                    <p class="dependente"></p>
+
+                    
+                    </div>
+                </div>
+
+
+                <div class="w23 invisivel" id="elemento-plano2">
+                    <div class="desc">
+                    <div class="plano"><h2>CUIDE DE VOCÊ</h2></div>
+                    
+                    <p class="preco">R$ 80,00/mês por</p>
+                    <p class="contrato-anual">R$ 49,90/mês</p>
+                    <p class="sub-contrato">Contrato Anual</p>
+                    <p class="titulares">1 usuário titular</p>
+                    <p class="dependente"></p>
+                    
+                    
+                    </div>
+                </div>
+                
+                <div class="w23 invisivel" id="elemento-plano3"> 
+                    <div class="desc principal">
+
+                    <div class="plano"><h2>CUIDE DE QUEM VOCÊ AMA</h2></div>
+                    
+                    <p class="verificado"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                        <image id="Camada_1" data-name="Camada 1" x="5" y="5" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACNklEQVQ4jY1Vv2/TQBh9/uxECKa2SVBJgtIYUajEgMSAGgpFsISFhaSoytwBwcTEUGglBvgDGNipkNKRgR8LEk0bBiQGpEJFnYj8ENC0yhZQa9+HztRuFNdO3nT+7n3P7+x7dwr6IqceTzcmJOt3JbEOLFtBHYGC0XTmBiv8HEBiv9RQoMy1jNXXHrKfYHQsMwUSeU0LDVtC5IUQWvc8EZkqUXHXNHeIqdiqlEq+gpFTkwtgPPK8NggKFrc31xY8gtIZE38IaPUDE8TUlvFx1V6BQxLEOZ+Gvh4tkNvrCoZVNeKh+iBxIoYn83eRTsX/92oHvbag/JsWD+ZQij19eA96KoFO569dswTPRPVM1raL6WktUt+tdm0NXzhi4VAIDx4/w2a13k2tbxvxMYr9+DPRK3b+3DgKuSyIDjZBHzGJ5JDePEuKQuxZ1mgMhVtZ3L9TsEUHEHOhyThF9Gaj2+WrdyuIRoaQv3kdR8JhnDmdGkSs3jbiX1VgnY8Nn/xGRDPM7P71z182EA6HkL02CcsSgWIyPWAx22m//e5+pNHxy0t7pjnbS7566QKMagO15i+PkIOQpi793FgpyEc3pzKbnmADeF/65Kn1Ys8SLdetO2Aqyhh52P3BxGLZYanOoNOu1Y6OJKXJK4edQj5gMBZblfILZ9rTGNMvZmQ2NU0dYcG3Dzu+iJSXpiV2pLMto7zWPR98wOqZLMM+YJP7pboCnmsZ5Td+PQNdATIBciT3WeAVAOAf+2vXkBMKp/sAAAAASUVORK5CYII="/>
+                    </svg>MAIS VENDIDO</p>
+                    <p class="preco preco-p">R$ 149,90/mês por</p>
+                    <p class="contrato-anual contrato-anual-p">R$ 99,90/mês</p>
+                    <p class="sub-contrato sub-contrato-p">Contrato Anual</p>
+                    <p class="titulares titulares-p">1 usuário titular</p>
+                    <p class="dependente dependente-p">+2 dependentes</p>
+                    
+                    </div>
+                </div>
+                <div class="w23 invisivel" id="elemento-plano4">
+                    <div class="desc">
+                    <div class="plano"><h2>CUIDE DA SUA FAMÍLIA</h2></div>
+                    
+                        <p class="preco">R$ 199,90/mês por</p>
+                        <p class="contrato-anual">R$ 149,90/mês</p>
+                        <p class="sub-contrato">Contrato Anual</p>
+                        <p class="titulares">1 usuário titular</p>
+                        <p class="dependente">+4 dependentes </p>
+                    
+                    </div>
+                
+                </div>
+                <div class="caixa1">
+
+                    <div class="cartao">
+                        <div class="h2-select">
+                            <h2>Método de pagamento</h2>
+                            <select id="select" onchange="trocaPlano()">
+                                <option value="Plano1" >Plano1</option>
+                                <option value="Plano2" >Plano2</option>
+                                <option value="Plano3" >Plano3</option>
+                                <option value="Plano4" >plano4</option>
+                            </select>
+                        </div>
+                        <div class="div-text-cartao">
+                            <p>Nome do titular do cartão<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-cartao" placeholder="Nome completo...">
+                        </div>
+                        <div class="div-text-cartao">
+                            <p>CPF do titular<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-cartao" placeholder=" 000.000.000-00...">
+                        </div>
+                        <div class="dados-cartao">
+                            <p>CEP<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Ex: 00000-000...">
+                        </div>
+                    </div>
+                </div>  
+
+        </div>
+        
+      
+
+
+
+    
+
+
+
+
+
+    <footer>
+        <div class="footer">
+        <div class="div-footer">
+            <div class="w-30">
+                <img src="img/logo.png"width="100px"height="25" alt="logo">
+                <p class="w-30-desc">A LigDoctor é uma plataforma de telemedicina onde o usuário pode fazer todo o atendimento médico sem sair de casa apenas usando seu smartphone.<br><br>
+                    O usuário pode desde tirar pequenas dúvidas sobre saúde a receber pedidos de exames e receitas.a<br></p>
+                <p class="contato-footer"> (Responsável Técnico) RT</p>
+                <p class="dr">Dr.Fernando Bernardes CRMGO 9372</p>
+                <div class="icones">
+                    <div class="img-icon img-icon-insta">
+                        <a href="https://www.instagram.com/ligdoctor24h/" target="_blank" alt="intagram icon"><img src="img/insta.png" alt="facebook icon"></a>
+                    </div> 
+                    <div class="img-icon">
+                        <a href="https://facebook.com/ligdoctor24h/" target="_blank" alt="facebook icon"><img src="img/face.png" alt="facebook icon"></a>
+                    </div> 
+                    <div class="img-icon">
+                        <a href="https://www.youtube.com/channel/UCcoCyf5En_ojzhyyjzloAmg"target="_blank"><img src="img/youtube.png"  alt="youtube icon"></a>
+                    </div> 
+                </div> 
+            </div>
+            <div class="w-30  direita">
+                <p>Receba orientação médica gratuita.</p>
+
+                <p>Baixe o app LigDoctor!</p>
+                <a href="https://ligdoctor.com.br/baixar/" target="_blank"><input type="button" value="Baixar" class="baixar"></a>
+                <p class="observacao">*1 orientação por mês não cumulativa</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
