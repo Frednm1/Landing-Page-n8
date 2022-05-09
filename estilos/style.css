@@ -1,4 +1,5 @@
 body{
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #f3f3f3;
 }
@@ -6,35 +7,73 @@ body{
 .menu-desktop{
     height: 100px;
     background-color: #14233a;
+    
 }
 .menu-content{
     width: 100%;
     max-width: 1150px;
-    margin: auto;
+    display: flex;
     padding-top: 20px;
+    margin: auto;
+    justify-content: space-between;
 }
 .menu-content img{
-    display: block;
-    margin:auto;
+    display: inline-block;
+}
+.menu-content ul{
+    display: flex;
+    color: white;
+    list-style: none;
+}
+.menu-content li{
+    padding: 0px 10px 0px 10px;
+}
+.menu-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.menu-content a:hover{
+    transition: 0.5s;
+    color: #ec7200;
+    font-size: 18px;
+}
+.baixar-menu{
+    background-color: rgba(255, 0, 0, 0.782);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.baixar-menu:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #ec7200;
+}
+h1{
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 500;
 }
 /*header*/
 
 /*layout*/
 .grid{
     display: grid;
-    width: 1150px;
-    margin: 100px auto;
+    width: 1300px;
+    margin: 40px auto;
     grid-template-columns: 
     "endereco pc pc pc"
     ;
     grid-template-rows: auto;
     grid-template-areas:    
-     "endereco planos . ."
+     "endereco planos planos  planos"
      "endereco cartao cartao cartao"
     ;
     row-gap: 20px;
     column-gap: 60px;
-    font-family: 'Roboto', sans-serif;
+    
 }
 /*layout*/
 
@@ -45,10 +84,22 @@ body{
     width: 530px;
     grid-area: endereco;
     background-color: #ffffff;
-    height: 680px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.27);
-    box-shadow: rgba(0, 0, 0, 0.243) 0px 2px;
+    height: 700px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.101);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px;
+}
+.endereco form h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.sub-h3{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
 }
 .endereco-content{
     padding: 20px;
@@ -87,24 +138,37 @@ body{
     display: block;
     padding: 15px 10px;
     border: 1px solid #ec7400;
-    
-    border-radius: 10px;
+    box-shadow: #00000014 0px 2px;
+    border-radius: 5px;
     width: 300px;
 }
 #termos{
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 25px;
+    
 }
-.termos{
-    margin:10px 0px 0px 25px;
-    height: 120px;
+.termos a{
+    text-decoration: none;
+    color: black;
+}
+.termos a:hover{
+    transition: 0.5s;
+    color: rgb(64, 64, 239);
+    cursor: pointer;
+}
+.termos div{
+    margin-left:25px;
+    height: 110px;
     width: 480px;
     font-size: 14px;
     background-color: #ec7200;
+    box-shadow: #00000014 0px 3px;
     display: block;
-    border-radius: 10px;
+    border-radius: 5px;
+
 }
-.termos p{
+
+.termos div p{
     line-height: normal;
     padding: 0px 11px;
     color: #f3f3f3de;
@@ -114,7 +178,49 @@ body{
 /*endereco*/
 
 
+/*seletor*/
+
+.seletor{
+    grid-area: planos;
+
+    display: flex;
+}
+.container-select{
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    display:inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.101);
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px;
+}
+.seletor{
+    padding: 0 20px;
+}
+select{
+    width: 200px;
+    margin-left: 50px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: #45444369 1px solid;
+    display: inline-block;
+    box-shadow: #ec720013 1px 1px 4px 4px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+/*seletor*/
+
 /*planos*/
+.container-w23{
+    width: 300px;
+    display: inline-block;
+    height: 320px;
+}
 .visivel{
     display: inline-block;
     grid-area: planos;
@@ -126,19 +232,17 @@ body{
     width:280px;
     text-align: center;
     margin: 0px auto;
-    line-height: 0;
-    height: 477;
-    
+    line-height: 0;   
 }
 .plano{
     background-color:#14233a;
     color: #ffffff;
-    border-radius: 30px 30px 0 0 ;
-    padding-top: 7px;
+    border-radius: 5px 5px 0px 0px ;
+    padding-top: 5px;
 }
 .plano h2{
     font-size: medium;
-    padding-bottom: 14px;
+    padding-bottom: 20px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -146,14 +250,12 @@ body{
 .desc{
     background-color:white;
     height: 300px;
-    border-radius: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.27);
-    box-shadow: rgba(0, 0, 0, 0.243) 0px 2px;
+    border-radius: 30px 30px 5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.101);
+    border-left: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px;
 }
-.principal{
-    background-color:#ec7400;
-    border: none;
-}
+
 .botao{
     border: none;
     color: white;
@@ -164,9 +266,14 @@ body{
     font-size: 14px;
     margin-top: 40px;
     font-weight: 500;
+    float: right;
 }
 .botao:hover{
     cursor: pointer;
+}
+.principal{
+    background-color: #ec7200;
+    border: none;
 }
 .b-laranja{
     background-color:#14233a;
@@ -202,8 +309,7 @@ body{
 .verificado{
     color:white;
     font-weight: 800;
-    font-size: 17px;
-    align-items: baseline;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
 .verificado svg{
@@ -266,59 +372,49 @@ body{
 /*caixa1*/
 
 .caixa1{
-    width: 100%;
-    height: 359px;
+    width: 650px;
+    height: 379px;
     background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.27);
-    box-shadow: rgba(0, 0, 0, 0.243) 0px 2px;
-    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.101);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px;
+    border-radius: 10px;
     grid-area: cartao;
 }
 .cartao{
     padding:5px 20px;
+    
 }
 .cartao input{
     margin-top: 5px;
+    box-shadow: #00000014 0px 2px;
 }
 .cartao p{
     
     display: inline;
+
     font-size: 14px;
 }
 .input-text-cartao{
     background-color: #ffffff;
-    border: #ec7200 1px solid;
-    border-radius: 10px;
+    border: #45444369 1px solid;
+    border-radius: 5px;
     padding:10px 20px;
     width: 150px;
     display: block;
+    
 }
 .div-text-cartao{
-    width: 48%;
+    width: 49%;
     display: inline-block;
-    margin:10px 0 10px 0;
+    margin:20px 0 10px 0;
 }
-.h2-select{
-    height: 30px;
-    margin-bottom: 20px;
-}
-.h2-select h2{
-    display: inline-block;
-    font-weight: 500;
-    line-height: 30px;
-}
+
 .dados-cartao input{
     padding: 10px 20px;
+    border-radius: 5px;
+    border: #45444369 1px solid;
 }
-.h2-select select{
-    margin-left: 100px;
-    width: 120px;
-    padding: 5px 15px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    display: inline-block;
-    box-shadow: #ec720013 1px 1px 4px 4px;
-}
+
 
 /*caixa1*/
 

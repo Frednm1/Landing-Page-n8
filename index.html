@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!--Folha de estilo-->
     <link rel="stylesheet" href="estilos/style.css">
-    <!--jquey-->
+    <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
     <title>Dados - LigDoctor 24 horas</title>
 </head>
 <body>
@@ -19,15 +21,23 @@
         <div class="menu-desktop">
             <div class="menu-content">
                 <a href="https://ligdoctor.com.br/"><img src="img/logo.png"width="200px"height="50px" alt="logo"></a>
+                <ul>
+                    <li><a href="https://ligdoctor.com.br/planos/">Planos</a></li>
+                    <li><a href="https://ligdoctor.com.br/blogligdoctor/">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Olá, ...</a></li>
+                </ul>
+                <a href="https://ligdoctor.com.br/baixar/"><input type="button" value="Baixe o App" class="baixar-menu"></a>
             </div>
         </div>
     </header>
-    
+        <h1>Assinatura de serviço recorrente com cartão de crédito.</h1>
         <div class="grid">
             <div class="endereco">
                 <div class="endereco-content">
                     <form>
-                        <h2>Preencha os dados</h2>
+                        <h3>Detalhes de pagamento:</h3>
+                        <p class="sub-h3">Para continuar a contratação do seu plano,por favor, verifique e preencha o seu endereço completo</p>
                         <div class="input-text-dados2">
                             <p>Cidade<div class="asterisco"> *</div></p>
                             <input type="text" class="input-text-dados" placeholder="Ex: Goiânia...">
@@ -58,104 +68,130 @@
                         </div>
                     </div>
                 </form>
+                
                 <div class="termos">
-                    
-                    <p><input type="checkbox" name="termos" id="termos">Li e aceito os termos e condições de uso. Ao clicar em "contratar plano", concordo com as clausulas contratuais para acessar o serviço. Você pode solicitar o cancelamento da sua assinatura na aba "Planos"em sua conta no app. O cancelamento está sujeito a multas e condições previstas em contrato.</p>
+                    <input type="checkbox" name="termos" id="termos"><p > Eu aceito os <a href="https://lewe.nyc3.digitaloceanspaces.com/pdf/CONTRATO_DE_AQUISICAO_DE_PLANO_TELECONSULTA_POR_ADES%C3%83O.pdf" target="_blank">Termos e Condições de Uso do Ligdoctor.</a></p>
+                    <div>
+                        <p>Li e aceito os termos e condições de uso. Ao clicar em "contratar plano", concordo com as clausulas contratuais para acessar o serviço. Você pode solicitar o cancelamento da sua assinatura na aba "Planos"em sua conta no app. O cancelamento está sujeito a multas e condições previstas em contrato.</p>
+                    </div>
                 </div>
                 
             </div>
+                <div class="seletor">
+                    <div class="container-select">
+                        <h3>Cuide da sua saude</h3>
 
+                        <p>Selecione o plano desejado:</p>
+                        
+                        <select id="select" onchange="trocaPlano()">
+                            <option value="Plano1" >LigDoctor Chat</option>
+                            <option value="Plano2" >Cuide de Você</option>
+                            <option value="Plano3" >Cuide de quem você ama</option>
+                            <option value="Plano4" >Cuide da sua família</option>
+                        </select>
+                        <p>Selecione o tipo do contrato:</p>
+                        <select id="select" onchange="trocaPlano()">
+                            <option value="Mensal" >Mensal</option>
+                            <option value="Anual" >Anual</option>
+                        </select>
+                    </div>
+                    <div class="container-w23">
+                        <div class="w23 visivel" id="elemento-plano1">
+                            <div class="desc">
+                            <div class="plano"><h2>LIGDOCTOR CHAT</h2></div>
+                            
+                            <p class="preco">R$ 19,90/mês por</p>
+                            <p class="contrato-anual">R$ 16,90/mês</p>
+                            <p class="sub-contrato">Contrato Anual</p>
+                            <p class="titulares">1 usuário titular</p>
+                            <p class="dependente"></p>
+
+                            
+                            </div>
+                        </div>
+
+
+                        <div class="w23 invisivel" id="elemento-plano2">
+                            <div class="desc">
+                            <div class="plano"><h2>CUIDE DE VOCÊ</h2></div>
+                            
+                            <p class="preco">R$ 80,00/mês por</p>
+                            <p class="contrato-anual">R$ 49,90/mês</p>
+                            <p class="sub-contrato">Contrato Anual</p>
+                            <p class="titulares">1 usuário titular</p>
+                            <p class="dependente"></p>
+                            
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="w23 invisivel" id="elemento-plano3"> 
+                            <div class="desc principal">
+
+                            <div class="plano"><h2>CUIDE DE QUEM VOCÊ AMA</h2></div>
+                            
+                            <p class="verificado"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                                <image id="Camada_1" data-name="Camada 1" x="5" y="5" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACNklEQVQ4jY1Vv2/TQBh9/uxECKa2SVBJgtIYUajEgMSAGgpFsISFhaSoytwBwcTEUGglBvgDGNipkNKRgR8LEk0bBiQGpEJFnYj8ENC0yhZQa9+HztRuFNdO3nT+7n3P7+x7dwr6IqceTzcmJOt3JbEOLFtBHYGC0XTmBiv8HEBiv9RQoMy1jNXXHrKfYHQsMwUSeU0LDVtC5IUQWvc8EZkqUXHXNHeIqdiqlEq+gpFTkwtgPPK8NggKFrc31xY8gtIZE38IaPUDE8TUlvFx1V6BQxLEOZ+Gvh4tkNvrCoZVNeKh+iBxIoYn83eRTsX/92oHvbag/JsWD+ZQij19eA96KoFO569dswTPRPVM1raL6WktUt+tdm0NXzhi4VAIDx4/w2a13k2tbxvxMYr9+DPRK3b+3DgKuSyIDjZBHzGJ5JDePEuKQuxZ1mgMhVtZ3L9TsEUHEHOhyThF9Gaj2+WrdyuIRoaQv3kdR8JhnDmdGkSs3jbiX1VgnY8Nn/xGRDPM7P71z182EA6HkL02CcsSgWIyPWAx22m//e5+pNHxy0t7pjnbS7566QKMagO15i+PkIOQpi793FgpyEc3pzKbnmADeF/65Kn1Ys8SLdetO2Aqyhh52P3BxGLZYanOoNOu1Y6OJKXJK4edQj5gMBZblfILZ9rTGNMvZmQ2NU0dYcG3Dzu+iJSXpiV2pLMto7zWPR98wOqZLMM+YJP7pboCnmsZ5Td+PQNdATIBciT3WeAVAOAf+2vXkBMKp/sAAAAASUVORK5CYII="/>
+                            </svg>MAIS VENDIDO</p>
+                            <p class="preco preco-p">R$ 149,90/mês por</p>
+                            <p class="contrato-anual contrato-anual-p">R$ 99,90/mês</p>
+                            <p class="sub-contrato sub-contrato-p">Contrato Anual</p>
+                            <p class="titulares titulares-p">1 usuário titular</p>
+                            <p class="dependente dependente-p">+2 dependentes</p>
+                            
+                            </div>
+                        </div>
+                        <div class="w23 invisivel" id="elemento-plano4">
+                            <div class="desc">
+                                <div class="plano"><h2>CUIDE DA SUA FAMÍLIA</h2></div>
+                            
+                                <p class="preco">R$ 199,90/mês por</p>
+                                <p class="contrato-anual">R$ 149,90/mês</p>
+                                <p class="sub-contrato">Contrato Anual</p>
+                                <p class="titulares">1 usuário titular</p>
+                                <p class="dependente">+4 dependentes </p>
+                            
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+            
         
-                <div class="w23 visivel" id="elemento-plano1">
-                    <div class="desc">
-                    <div class="plano"><h2>LIGDOCTOR CHAT</h2></div>
-                    
-                    <p class="preco">R$ 19,90/mês por</p>
-                    <p class="contrato-anual">R$ 16,90/mês</p>
-                    <p class="sub-contrato">Contrato Anual</p>
-                    <p class="titulares">1 usuário titular</p>
-                    <p class="dependente"></p>
-
-                    
-                    </div>
-                </div>
-
-
-                <div class="w23 invisivel" id="elemento-plano2">
-                    <div class="desc">
-                    <div class="plano"><h2>CUIDE DE VOCÊ</h2></div>
-                    
-                    <p class="preco">R$ 80,00/mês por</p>
-                    <p class="contrato-anual">R$ 49,90/mês</p>
-                    <p class="sub-contrato">Contrato Anual</p>
-                    <p class="titulares">1 usuário titular</p>
-                    <p class="dependente"></p>
-                    
-                    
-                    </div>
-                </div>
                 
-                <div class="w23 invisivel" id="elemento-plano3"> 
-                    <div class="desc principal">
-
-                    <div class="plano"><h2>CUIDE DE QUEM VOCÊ AMA</h2></div>
-                    
-                    <p class="verificado"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
-                        <image id="Camada_1" data-name="Camada 1" x="5" y="5" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACNklEQVQ4jY1Vv2/TQBh9/uxECKa2SVBJgtIYUajEgMSAGgpFsISFhaSoytwBwcTEUGglBvgDGNipkNKRgR8LEk0bBiQGpEJFnYj8ENC0yhZQa9+HztRuFNdO3nT+7n3P7+x7dwr6IqceTzcmJOt3JbEOLFtBHYGC0XTmBiv8HEBiv9RQoMy1jNXXHrKfYHQsMwUSeU0LDVtC5IUQWvc8EZkqUXHXNHeIqdiqlEq+gpFTkwtgPPK8NggKFrc31xY8gtIZE38IaPUDE8TUlvFx1V6BQxLEOZ+Gvh4tkNvrCoZVNeKh+iBxIoYn83eRTsX/92oHvbag/JsWD+ZQij19eA96KoFO569dswTPRPVM1raL6WktUt+tdm0NXzhi4VAIDx4/w2a13k2tbxvxMYr9+DPRK3b+3DgKuSyIDjZBHzGJ5JDePEuKQuxZ1mgMhVtZ3L9TsEUHEHOhyThF9Gaj2+WrdyuIRoaQv3kdR8JhnDmdGkSs3jbiX1VgnY8Nn/xGRDPM7P71z182EA6HkL02CcsSgWIyPWAx22m//e5+pNHxy0t7pjnbS7566QKMagO15i+PkIOQpi793FgpyEc3pzKbnmADeF/65Kn1Ys8SLdetO2Aqyhh52P3BxGLZYanOoNOu1Y6OJKXJK4edQj5gMBZblfILZ9rTGNMvZmQ2NU0dYcG3Dzu+iJSXpiV2pLMto7zWPR98wOqZLMM+YJP7pboCnmsZ5Td+PQNdATIBciT3WeAVAOAf+2vXkBMKp/sAAAAASUVORK5CYII="/>
-                    </svg>MAIS VENDIDO</p>
-                    <p class="preco preco-p">R$ 149,90/mês por</p>
-                    <p class="contrato-anual contrato-anual-p">R$ 99,90/mês</p>
-                    <p class="sub-contrato sub-contrato-p">Contrato Anual</p>
-                    <p class="titulares titulares-p">1 usuário titular</p>
-                    <p class="dependente dependente-p">+2 dependentes</p>
-                    
-                    </div>
-                </div>
-                <div class="w23 invisivel" id="elemento-plano4">
-                    <div class="desc">
-                    <div class="plano"><h2>CUIDE DA SUA FAMÍLIA</h2></div>
-                    
-                        <p class="preco">R$ 199,90/mês por</p>
-                        <p class="contrato-anual">R$ 149,90/mês</p>
-                        <p class="sub-contrato">Contrato Anual</p>
-                        <p class="titulares">1 usuário titular</p>
-                        <p class="dependente">+4 dependentes </p>
-                    
-                    </div>
-                
-                </div>
                 <div class="caixa1">
 
                     <div class="cartao">
-                        <div class="h2-select">
-                            <h2>Método de pagamento</h2>
-                            <select id="select" onchange="trocaPlano()">
-                                <option value="Plano1" >Plano1</option>
-                                <option value="Plano2" >Plano2</option>
-                                <option value="Plano3" >Plano3</option>
-                                <option value="Plano4" >plano4</option>
-                            </select>
-                        </div>
+                        <h2>Dados de pagamento</h2>
+
                         <div class="div-text-cartao">
                             <p>Nome do titular do cartão<div class="asterisco"> *</div></p>
                             <input type="text" class="input-text-cartao" placeholder="Nome completo...">
                         </div>
+
                         <div class="div-text-cartao">
                             <p>CPF do titular<div class="asterisco"> *</div></p>
                             <input type="text" class="input-text-cartao" placeholder=" 000.000.000-00...">
                         </div>
+
                         <div class="dados-cartao">
                             <p>Número do cartão<div class="asterisco"> *</div></p>
                             <input type="text" class="input-text-dados" placeholder="Número do cartão...">
+
                             <div class="div-text-cartao">
                                 <p>Data de vencimento<div class="asterisco"> *</div></p>
                                 <input type="text" class="input-text-cartao" placeholder=" 00/00...">
                             </div>
+
                             <div class="div-text-cartao">
                                 <p>Código de verificação<div class="asterisco"> *</div></p>
                                 <input type="text" class="input-text-cartao" placeholder=" 000...">
                             </div>
+
                         </div>
+                        
+                        <input type="button" value="Continuar" class="botao desabilitado">
                     </div>
                 </div>  
 
@@ -205,3 +241,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
