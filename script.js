@@ -25,7 +25,7 @@ $(function(){
     
 
 })
-var select = document.getElementById("select")
+    var select = document.getElementById("select")
     function trocaPlano(){
         var elemento1 = document.getElementById("elemento-plano1")
         var elemento2 = document.getElementById("elemento-plano2")

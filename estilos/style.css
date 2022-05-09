@@ -199,6 +199,28 @@ h1{
 .seletor{
     padding: 0 20px;
 }
+select{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: #45444369 1px solid;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: #00000014 0px 2px;
+}
+select option{
+    padding: 0px 10px;
+    text-align: left;
+}
+select option:hover{
+    transition: 0.5s;
+    background-color: #ec7200;
+}
+.sub-select{
+    margin-top: 40px;
+}
 
 
 

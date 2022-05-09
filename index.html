@@ -84,16 +84,16 @@
 
                         <p>Selecione o plano desejado:</p>
                         
-                        <div class="select" onchange="trocaPlano()">
-                            <select>
+                        <div onchange="trocaPlano()">
+                            <select id="select" >
                               <option value="Plano1">LigDoctor Chat</option>
                               <option value="Plano2">Cuide de Você</option>
-                              <option value="Plano3">Cuide de Você</option>
+                              <option value="Plano3">Cuide de quem você ama</option>
                               <option value="Plano4">Cuide da sua família</option>
                             </select>
                           </div>
-                        <p>Selecione o tipo do contrato:</p>
-                        <select class="select" onchange="trocaPlano()">
+                        <p class="sub-select">Selecione o tipo do contrato:</p>
+                        <select onchange="trocaPlano()">
                             <option value="Mensal" >Mensal</option>
                             <option value="Anual" >Anual</option>
                         </select>
