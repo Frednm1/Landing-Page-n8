@@ -11,7 +11,6 @@ body{
     width: 100%;
 }
 /*header*/
-
     .menu-desktop{
         height: 100px;
         background-color: #14233a;
@@ -88,7 +87,6 @@ body{
 /*layout*/
 
 /*endereco*/
-
     .endereco{
         width: 530px;
         height: 925px;
@@ -196,12 +194,10 @@ body{
         top: -20px; /*localização. Experimente alterar para 'bottom'*/
         left: 25%;
     }
-
 /*endereco*/
 
 
 /*seletor*/
-
     .seletor{
         grid-area: seletor;
         text-align: center;
@@ -259,15 +255,11 @@ body{
         padding: 0px 10px;
         text-align: left;
     }
-
 /*seletor*/
 
 
-        
-
 
 /*cartao*/
-
     .cartao{
         grid-area: cartao;
         padding:5px 20px;
@@ -319,6 +311,8 @@ body{
         cursor: pointer;
     }
 /*cartao*/
+
+
 
 
 /*footer*/
@@ -405,6 +399,9 @@ body{
     padding-top: 5px;
 }
 /*footer*/
+
+
+
 @media (max-width:1180px){
     /*layout*/
     .grid{
@@ -424,16 +421,13 @@ body{
     /*layout*/
 
     /*cartao*/
-
     .cartao{
         width: 490px;
         margin: 0 auto;
     }
-
     /*cartao*/
 
     /*seletor*/
-
     .seletor{
         width: 530px;
         margin: 0 auto;
@@ -441,7 +435,6 @@ body{
     /*seletor*/
 
     /*endereco*/
-
     .endereco{
         width: 530px;
         margin: 0 auto;
@@ -449,7 +442,6 @@ body{
     /*endereco*/
 
     /*footer*/
-
     .footer{
         height: 450px;
     }
@@ -468,7 +460,6 @@ body{
 @media (max-width:650px){
 
     /*endereco*/
-    
     .endereco{
         width: 360px;
         height: 1020px;
@@ -485,23 +476,19 @@ body{
     /*endereco*/
 
     /*seletor*/
-
     .seletor{
         width: 360px;
     }
     select{
         width: 300px;
     }
-
     /*seletor*/
 
     /*cartao*/
-
     .cartao{
        width: 320px;
     }
-  
-/*cartao*/
+    /*cartao*/
 
 
     /*footer*/
