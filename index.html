@@ -96,7 +96,7 @@
                             </select>
                           </div>
                         <p class="sub-select">Selecione o tipo do contrato:</p>
-                        <select onchange="trocaPlano()">
+                        <select >
                             <option value="Mensal" >Mensal</option>
                             <option value="Anual" >Anual</option>
                         </select>
@@ -170,35 +170,37 @@
 
                 <div class="cartao">
                     <h2>Dados de pagamento</h2>
-
-                    <div class="div-text-cartao">
-                        <p>Nome do titular do cartão<div class="asterisco"> *</div></p>
-                        <input type="text" class="input-text-cartao" placeholder="Nome completo...">
-                    </div>
-
-                    <div class="div-text-cartao">
-                        <p>CPF do titular<div class="asterisco"> *</div></p>
-                        <input type="text" class="input-text-cartao" placeholder=" 123.345.678-90...">
-                    </div>
-
-                    <div class="dados-cartao">
-                        <p>Número do cartão<div class="asterisco"> *</div></p>
-                        <input type="text" class="input-text-dados" placeholder="Número do cartão...">
-
-                        <div class="div-pequena-cartao espacamento">
-                            <p>Vencimento<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-cartao" placeholder=" 12/25...">
+                    <form>
+                        <div class="div-text-cartao">
+                            <p>Nome do titular do cartão<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-cartao" placeholder="Nome completo...">
                         </div>
 
-                        <div class="div-pequena-cartao">
-                            <p>CVV<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-cartao" placeholder=" CVV...">
+                        <div class="div-text-cartao">
+                            <p>CPF do titular<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-cartao" placeholder=" 123.345.678-90...">
                         </div>
 
-                    </div>
-                    
+                        <div class="dados-cartao">
+                            
+                            <p>Número do cartão<div class="asterisco"> *</div></p>
+                            <input type="text" class="input-text-dados" placeholder="Número do cartão...">
+
+                            <div class="div-pequena-cartao espacamento">
+                                <p>Vencimento<div class="asterisco"> *</div></p>
+                                <input type="text" class="input-text-cartao" placeholder=" 12/25...">
+                            </div>
+
+                            <div class="div-pequena-cartao">
+                                <p>CVV<div class="asterisco"> *</div></p>
+                                <input type="text" class="input-text-cartao" placeholder=" CVV...">
+                            </div>
+                        
+                        </div>
+                    </form>
                     <input type="button" value="Continuar" class="botao desabilitado">
                 </div>
+
             </div>  
         </div>
         
