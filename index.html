@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="estilos/style.css">
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-    <title>Dados - LigDoctor 24 horas</title>
+    <!--icon-->
+    <link rel="icon" href="https://ligdoctor.com.br/wp-content/uploads/2021/11/cropped-ICONE-SITE-192x192.png" sizes="192x192">
+    <title>Pagamento - LigDoctor 24 horas</title>
 </head>
 <body>
     <header>
@@ -39,40 +40,43 @@
                     <form>
                         <h3>Detalhes de pagamento:</h3>
                         <p class="sub-h3">Para continuar a contratação do seu plano,por favor, verifique e preencha o seu endereço completo</p>
-                        <div class="input-text-dados2">
+                        <div class="box-input1">
                             <p>Cidade<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-dados" placeholder="Ex: Goiânia...">
+                            <input type="text" class="input1" placeholder="Ex: Goiânia...">
                         </div>
-                        <div class="input-text-dados3">
-                            <p>Número<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-dados" placeholder="Ex: 123...">
-                        </div>
-                        <div class="input-text-dados2">
-                            <p>Bairro<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-dados" placeholder="Ex: Goiânia...">
-                        </div>
-                        <div class="input-text-dados3">
+                        <div class="box-input2">
                             <p>Complemento<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-dados" placeholder="Ex: apt.123...">
+                            <input type="text" class="input2" placeholder="Ex: apt.123...">
                         </div>
-                        <div>
+                        <div class="box-input3">
+                            <p>Número<div class="asterisco"> *</div></p>
+                            <input type="text" class="input3" placeholder="Ex: 123...">
+                        </div>        
+                        <div class="box-input1">
+                            <p>Bairro<div class="asterisco"> *</div></p>
+                            <input type="text" class="input1" placeholder="Ex: Goiânia...">
+                        </div>
+                        
+                        <div class="box-input1">
                         <p>CEP<div class="asterisco"> *</div></p>
-                        <input type="text" class="input-text-dados" placeholder="Ex: 12345-678...">
+                        <input type="text" class="input1" placeholder="Ex: 12345-678...">
                         </div>
-                        <div class="input-text-dados2">
+                        <div class="box-input2">
                             <p>Cidade<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-dados" placeholder="Ex: Goiânia">
+                            <input type="text" class="input2" placeholder="Ex: Goiânia">
                         </div>
-                        <div class="input-text-dados3">
+                        <div class="box-input3">
                             <p>UF<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-dados" placeholder="Ex: GO">
+                            <input type="text" class="input3" placeholder="Ex: GO">
                         </div>
                     </div>
                 </form>
                 
                 <div class="termos">
-                    <input type="checkbox" name="termos" id="termos"><p > Eu aceito os <a href="https://lewe.nyc3.digitaloceanspaces.com/pdf/CONTRATO_DE_AQUISICAO_DE_PLANO_TELECONSULTA_POR_ADES%C3%83O.pdf" target="_blank">Termos e Condições de Uso do Ligdoctor.</a></p>
-                    <div>
+                    
+                    <p ><input type="checkbox" name="termos"> Eu aceito os <a href="https://lewe.nyc3.digitaloceanspaces.com/pdf/CONTRATO_DE_AQUISICAO_DE_PLANO_TELECONSULTA_POR_ADES%C3%83O.pdf" target="_blank">Termos e Condições de Uso do Ligdoctor.</a></p>
+                 
+                    <div class="balao2">
                         <p>Li e aceito os termos e condições de uso. Ao clicar em "contratar plano", concordo com as clausulas contratuais para acessar o serviço. Você pode solicitar o cancelamento da sua assinatura na aba "Planos"em sua conta no app. O cancelamento está sujeito a multas e condições previstas em contrato.</p>
                     </div>
                 </div>
@@ -80,88 +84,61 @@
             </div>
 
 
-            <div class="pagamento">
+           
                 <div class="seletor">
-                    <div class="container-select">
-                        <h3>Cuide da sua saude</h3>
-
-                        <p>Selecione o plano desejado:</p>
+                    
+                    <div class="visivel" id="elemento-plano1">
                         
-                        <div onchange="trocaPlano()">
-                            <select id="select" >
-                              <option value="Plano1">LigDoctor Chat</option>
-                              <option value="Plano2">Cuide de Você</option>
-                              <option value="Plano3">Cuide de quem você ama</option>
-                              <option value="Plano4">Cuide da sua família</option>
-                            </select>
-                          </div>
-                        <p class="sub-select">Selecione o tipo do contrato:</p>
-                        <select >
-                            <option value="Mensal" >Mensal</option>
-                            <option value="Anual" >Anual</option>
-                        </select>
+                        <div class="nome-plano"><h2>LIGDOCTOR CHAT</h2></div>
+                        <p class="valor">R$ 16,90/mês</p>
+                        <p class="titulares">1 usuário titular</p>
+                        <p class="dependente"></p>
+    
                     </div>
-                    <div class="container-w23">
-                        <div class="w23 visivel" id="elemento-plano1">
-                            <div class="desc">
-                            <div class="plano"><h2>LIGDOCTOR CHAT</h2></div>
-                            
-                            <p class="preco">R$ 19,90/mês por</p>
-                            <p class="contrato-anual">R$ 16,90/mês</p>
-                            <p class="sub-contrato">Contrato Anual</p>
-                            <p class="titulares">1 usuário titular</p>
-                            <p class="dependente"></p>
 
-                            
-                            </div>
-                        </div>
-
-
-                        <div class="w23 invisivel" id="elemento-plano2">
-                            <div class="desc">
-                            <div class="plano"><h2>CUIDE DE VOCÊ</h2></div>
-                            
-                            <p class="preco">R$ 80,00/mês por</p>
-                            <p class="contrato-anual">R$ 49,90/mês</p>
-                            <p class="sub-contrato">Contrato Anual</p>
-                            <p class="titulares">1 usuário titular</p>
-                            <p class="dependente"></p>
-                            
-                            
-                            </div>
-                        </div>
+                    <div class="invisivel" id="elemento-plano2">
                         
-                        <div class="w23 invisivel" id="elemento-plano3"> 
-                            <div class="desc principal">
-
-                            <div class="plano"><h2>CUIDE DE QUEM VOCÊ AMA</h2></div>
-                            
-                            <p class="verificado"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
-                                <image id="Camada_1" data-name="Camada 1" x="5" y="5" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACNklEQVQ4jY1Vv2/TQBh9/uxECKa2SVBJgtIYUajEgMSAGgpFsISFhaSoytwBwcTEUGglBvgDGNipkNKRgR8LEk0bBiQGpEJFnYj8ENC0yhZQa9+HztRuFNdO3nT+7n3P7+x7dwr6IqceTzcmJOt3JbEOLFtBHYGC0XTmBiv8HEBiv9RQoMy1jNXXHrKfYHQsMwUSeU0LDVtC5IUQWvc8EZkqUXHXNHeIqdiqlEq+gpFTkwtgPPK8NggKFrc31xY8gtIZE38IaPUDE8TUlvFx1V6BQxLEOZ+Gvh4tkNvrCoZVNeKh+iBxIoYn83eRTsX/92oHvbag/JsWD+ZQij19eA96KoFO569dswTPRPVM1raL6WktUt+tdm0NXzhi4VAIDx4/w2a13k2tbxvxMYr9+DPRK3b+3DgKuSyIDjZBHzGJ5JDePEuKQuxZ1mgMhVtZ3L9TsEUHEHOhyThF9Gaj2+WrdyuIRoaQv3kdR8JhnDmdGkSs3jbiX1VgnY8Nn/xGRDPM7P71z182EA6HkL02CcsSgWIyPWAx22m//e5+pNHxy0t7pjnbS7566QKMagO15i+PkIOQpi793FgpyEc3pzKbnmADeF/65Kn1Ys8SLdetO2Aqyhh52P3BxGLZYanOoNOu1Y6OJKXJK4edQj5gMBZblfILZ9rTGNMvZmQ2NU0dYcG3Dzu+iJSXpiV2pLMto7zWPR98wOqZLMM+YJP7pboCnmsZ5Td+PQNdATIBciT3WeAVAOAf+2vXkBMKp/sAAAAASUVORK5CYII="/>
-                            </svg>MAIS VENDIDO</p>
-                            <p class="preco preco-p">R$ 149,90/mês por</p>
-                            <p class="contrato-anual contrato-anual-p">R$ 99,90/mês</p>
-                            <p class="sub-contrato sub-contrato-p">Contrato Anual</p>
-                            <p class="titulares titulares-p">1 usuário titular</p>
-                            <p class="dependente dependente-p">+2 dependentes</p>
-                            
-                            </div>
-                        </div>
-                        <div class="w23 invisivel" id="elemento-plano4">
-                            <div class="desc">
-                                <div class="plano"><h2>CUIDE DA SUA FAMÍLIA</h2></div>
-                            
-                                <p class="preco">R$ 199,90/mês por</p>
-                                <p class="contrato-anual">R$ 149,90/mês</p>
-                                <p class="sub-contrato">Contrato Anual</p>
-                                <p class="titulares">1 usuário titular</p>
-                                <p class="dependente">+4 dependentes </p>
-                            
-                            </div>
+                        <div class="nome-plano"><h2>CUIDE DE VOCÊ</h2></div>
+                        <p class="valor">R$ 49,90/mês</p>
+                        <p class="titulares">1 usuário titular</p>
+                        <p class="dependente"></p>    
                         
-                        </div>
                     </div>
+                    
+                    <div class="invisivel" id="elemento-plano3"> 
+                
+                        <div class="nome-plano"><h2>CUIDE DE QUEM VOCÊ AMA</h2></div>
+                        <p class="valor">R$ 99,90/mês</p>
+                        <p class="titulares">1 usuário titular</p>
+                        <p class="dependente">+2 dependentes</p>
+    
+                    </div>
+                    
+                    <div class="invisivel" id="elemento-plano4">    
+                            <div class="nome-plano"><h2>CUIDE DA SUA FAMÍLIA</h2></div>
+                            <p class="valor">R$ 149,90/mês</p>
+                            <p class="titulares">1 usuário titular</p>
+                            <p class="dependente">+4 dependentes </p>
+                    </div>
+                    <p class="alterar">Alterar plano</p>
+                    <select id="select" onchange="trocaPlano()" >
+                        <option value="Plano1">LigDoctor Chat</option>
+                        <option value="Plano2">Cuide de Você</option>
+                        <option value="Plano3">Cuide de quem você ama</option>
+                        <option value="Plano4">Cuide da sua família</option>
+                    </select>
+
+
                 </div>
+                        
+
+                       
+                        
+                       
+                    
+                
+                    
+                
                 
             
         
@@ -169,39 +146,33 @@
                 
 
                 <div class="cartao">
-                    <h2>Dados de pagamento</h2>
-                    <form>
-                        <div class="div-text-cartao">
-                            <p>Nome do titular do cartão<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-cartao" placeholder="Nome completo...">
-                        </div>
-
-                        <div class="div-text-cartao">
-                            <p>CPF do titular<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-cartao" placeholder=" 123.345.678-90...">
-                        </div>
-
-                        <div class="dados-cartao">
+                    <div class="cartao-spacing">
+                        <h2>Dados de pagamento</h2>
+                        <form>
                             
-                            <p>Número do cartão<div class="asterisco"> *</div></p>
-                            <input type="text" class="input-text-dados" placeholder="Número do cartão...">
-
-                            <div class="div-pequena-cartao espacamento">
-                                <p>Vencimento<div class="asterisco"> *</div></p>
-                                <input type="text" class="input-text-cartao" placeholder=" 12/25...">
-                            </div>
-
-                            <div class="div-pequena-cartao">
-                                <p>CVV<div class="asterisco"> *</div></p>
-                                <input type="text" class="input-text-cartao" placeholder=" CVV...">
-                            </div>
+                                <p>Nome do titular do cartão<div class="asterisco"> *</div></p>
+                                <input type="text"  placeholder="Nome completo...">
+                                
+                                <p>CPF do titular<div class="asterisco"> *</div></p>
+                                <input type="text"  placeholder=" 123.345.678-90...">
                         
-                        </div>
-                    </form>
-                    <input type="button" value="Continuar" class="botao desabilitado">
+                                <p>Número do cartão<div class="asterisco"> *</div></p>
+                                <input type="text"  placeholder="Número do cartão...">
+
+                                <div class="cartao-input2">
+                                    <p>Vencimento<div class="asterisco"> *</div></p>
+                                    <input type="text"  placeholder=" 12/25...">
+                                </div>
+                                <div class="cartao-input2">
+                                    <p>CVV<div class="asterisco"> *</div></p>
+                                    <input type="text"  placeholder=" CVV...">
+                                </div>
+                            </form>
+                        <input type="submit" value="Continuar" class="botao">
+                    </div>
                 </div>
 
-            </div>  
+           
         </div>
         
       
