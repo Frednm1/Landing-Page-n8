@@ -17,9 +17,22 @@ $(function(){
             }else{
                 alert('É necessário aceitar os termos e condições para prosseguir!')
             }
+        })
+        $('#conta').click(function(){
+            aux = $('#user')
+            conta = aux.css('display')
+            img = document.getElementById('arrow').src
+            if(conta == "none"){
+                aux.fadeIn()
+                img.src = "img/arrowUp"
+            }else{
+                aux.fadeOut()
+                img.src = "img/arrowDown"
+            }
+                
             
         })
-
+        
     })
 
 
@@ -31,6 +44,8 @@ $(function(){
         var elemento2 = document.getElementById("elemento-plano2")
         var elemento3 = document.getElementById("elemento-plano3")
         var elemento4 = document.getElementById("elemento-plano4")
+        espaco = document.getElementById('select-planos')
+
         current = select.value
         if (current == 'Plano1'){
             elemento2.classList.remove('visivel')
@@ -43,6 +58,9 @@ $(function(){
 
             elemento1.classList.add('visivel')
             elemento1.classList.remove('invisivel')
+
+            espaco.classList.remove('seletor2')
+            espaco.classList.add('seletor')
         }else if(current == 'Plano2'){
             elemento1.classList.remove('visivel')
             elemento3.classList.remove('visivel')
@@ -54,6 +72,9 @@ $(function(){
 
             elemento2.classList.add('visivel')
             elemento2.classList.remove('invisivel')
+
+            espaco.classList.remove('seletor2')
+            espaco.classList.add('seletor')
         }else if(current =='Plano3'){
             elemento2.classList.remove('visivel')
             elemento1.classList.remove('visivel')
@@ -65,6 +86,10 @@ $(function(){
 
             elemento3.classList.add('visivel')
             elemento3.classList.remove('invisivel')
+
+            espaco.classList.remove('seletor')
+            espaco.classList.add('seletor2')
+
         }else if(current == 'Plano4'){
             elemento2.classList.remove('visivel')
             elemento3.classList.remove('visivel')
@@ -76,5 +101,8 @@ $(function(){
 
             elemento4.classList.add('visivel')
             elemento4.classList.remove('invisivel')
+
+            espaco.classList.remove('seletor')
+            espaco.classList.add('seletor2')
         }
     }

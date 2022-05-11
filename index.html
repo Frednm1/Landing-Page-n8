@@ -46,7 +46,12 @@
                             <li><a href="https://ligdoctor.com.br/planos/">Planos</a></li>
                             <li><a href="https://ligdoctor.com.br/blogligdoctor/">Blog</a></li>
                             <li><a href="https://ligdoctor.com.br/contato/">Contato</a></li>
-                            <li><a href="#">Olá, ...</a></li>
+                            <li ><a id="conta" href="#">Olá, ...<img src="img/arrowDown.png" alt="arrow down" class="arrow"></a>
+                                <ul id="user">
+                                    <li>Minha Conta</li>
+                                    <li>Sair</li>
+                                </ul>
+                             </li>
                         </ul>
                     </nav>
                 </div>
@@ -106,7 +111,7 @@
 
 
            
-                <div class="seletor">
+                <div class="seletor" id="select-planos">
                     
                     <div class="visivel" id="elemento-plano1">
                         
@@ -132,14 +137,16 @@
                         <p class="valor">R$ 99,90/mês</p>
                         <p class="titulares">1 usuário titular</p>
                         <p class="dependente">+2 dependentes</p>
-    
+                        
                     </div>
                     
                     <div class="invisivel" id="elemento-plano4">    
+
                             <div class="nome-plano"><h2>CUIDE DA SUA FAMÍLIA</h2></div>
                             <p class="valor">R$ 149,90/mês</p>
                             <p class="titulares">1 usuário titular</p>
                             <p class="dependente">+4 dependentes </p>
+
                     </div>
                     <p class="alterar">Alterar plano</p>
                     <select id="select" onchange="trocaPlano()" >
@@ -169,7 +176,7 @@
                 <div class="cartao">
                     <div class="cartao-spacing">
                         <h2>Dados de pagamento</h2>
-                        <form>
+                        <form class="form-cartao">
                             
                                 <p>Nome do titular do cartão<div class="asterisco"> *</div></p>
                                 <input type="text"  placeholder="Nome completo...">
@@ -181,15 +188,15 @@
                                 <input type="text"  placeholder="Número do cartão...">
 
                                 <div class="cartao-input2">
-                                    <p>Vencimento<div class="asterisco"> *</div></p>
+                                    <p>Venc<div class="asterisco"> *</div></p>
                                     <input type="text"  placeholder=" 12/25...">
-                                </div>
-                                <div class="cartao-input2">
-                                    <p>CVV<div class="asterisco"> *</div></p>
+                                
+                                    <p class="text-input2">CVV<div class="asterisco"> *</div></p>
                                     <input type="text"  placeholder=" CVV...">
                                 </div>
                             </form>
-                        <input type="submit" value="Continuar" class="botao" id="submit">
+                            <div class="continuar"> <input type="submit" value="Continuar" class="botao" id="submit"></div>
+                       
                     </div>
                 </div>
 
