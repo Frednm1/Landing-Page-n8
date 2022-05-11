@@ -14,20 +14,23 @@ $(function(){
             check = document.getElementById('check')
             if(check.checked){
                 //redireciona
+                //code...
             }else{
                 alert('É necessário aceitar os termos e condições para prosseguir!')
             }
         })
+
+        //flecha
         $('#conta').click(function(){
             aux = $('#user')
             conta = aux.css('display')
-            img = document.getElementById('arrow').src
+             
             if(conta == "none"){
                 aux.fadeIn()
-                img.src = "img/arrowUp"
+                document.getElementById('arrow').src = "img/arrowUp.png"
             }else{
                 aux.fadeOut()
-                img.src = "img/arrowDown"
+                document.getElementById('arrow').src = "img/arrowDown.png"
             }
                 
             
