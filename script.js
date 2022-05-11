@@ -1,32 +1,20 @@
 $(function(){
-    $('#check').click(function(){
-        var x = document.getElementById("check")
-        var aviso = $('.termos')
-        if(x.checked){
-            aviso.fadeIn()
-            var aux = document.getElementById('submit-link')
-            aux.href = "{{route('pasta.view')}}"
-            botao = document.getElementById("b2")
-            botao.disabled = false
-        }else {
-            aviso.fadeOut()
-            botao = document.getElementById("b2")
-            botao.disabled = true
-        }
+        $('#hamburger').click(function(){
+            menuContent = $('.menu-mobile-content').css('display')
+            if(menuContent == "none"){
+                $('.menu-mobile-content').fadeIn()
+                document.getElementById('hamburger').src = "img/close.png"
+            }else{
+                $('.menu-mobile-content').fadeOut()
+                document.getElementById('hamburger').src = "img/hamburger.png"
+            }
+        })
     })
-    $('.submit').click(function(){
 
-        var x = document.getElementById("check")
-        if(x.checked == false)
-        
-            alert('É necessário aceitar as Condiçôes de Uso do Ligdoctor primeiro')
-        
-    })
+
     
-
-})
-    var select = document.getElementById("select")
     function trocaPlano(){
+        var select = document.getElementById("select")
         var elemento1 = document.getElementById("elemento-plano1")
         var elemento2 = document.getElementById("elemento-plano2")
         var elemento3 = document.getElementById("elemento-plano3")
