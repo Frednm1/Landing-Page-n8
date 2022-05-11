@@ -1,4 +1,5 @@
 $(function(){
+        //botao mobile
         $('#hamburger').click(function(){
             menuContent = $('.menu-mobile-content').css('display')
             if(menuContent == "none"){
@@ -9,11 +10,22 @@ $(function(){
                 document.getElementById('hamburger').src = "img/hamburger.png"
             }
         })
+        $('#submit').click(function(){
+            check = document.getElementById('check')
+            if(check.checked){
+                //redireciona
+            }else{
+                alert('É necessário aceitar os termos e condições para prosseguir!')
+            }
+            
+        })
+
     })
 
 
-    
+    //troca de planos
     function trocaPlano(){
+        
         var select = document.getElementById("select")
         var elemento1 = document.getElementById("elemento-plano1")
         var elemento2 = document.getElementById("elemento-plano2")
