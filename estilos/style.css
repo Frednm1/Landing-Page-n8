@@ -10,6 +10,7 @@ body{
     display: inline-block;
     width: 100%;
 }
+
 /*header*/
     .menu-desktop{
         height: 100px;
@@ -63,6 +64,9 @@ body{
         text-align: center;
         font-weight: 500;
         font-size: 36px;
+    }
+    .menu-mobile{
+        display: none;
     }
 /*header*/
 
@@ -153,7 +157,6 @@ body{
     .termos input{
         margin-left: 25px;
     }
-    
     .termos a{
         
         color: black;
@@ -196,7 +199,6 @@ body{
     }
 /*endereco*/
 
-
 /*seletor*/
     .seletor{
         grid-area: seletor;
@@ -217,7 +219,7 @@ body{
     .nome-plano h2{
         line-height: none;
         margin-top: 0;
-        font-size: 32px;
+        font-size: 28px;
         padding:20px 0px 20px 0px;
     }
     .valor{
@@ -256,8 +258,6 @@ body{
         text-align: left;
     }
 /*seletor*/
-
-
 
 /*cartao*/
     .cartao{
@@ -311,9 +311,6 @@ body{
         cursor: pointer;
     }
 /*cartao*/
-
-
-
 
 /*footer*/
 .footer{
@@ -400,8 +397,6 @@ body{
 }
 /*footer*/
 
-
-
 @media (max-width:1180px){
     /*layout*/
     .grid{
@@ -419,6 +414,10 @@ body{
         row-gap: 40px;
     }
     /*layout*/
+
+    /*header*/
+
+    /*header*/
 
     /*cartao*/
     .cartao{
