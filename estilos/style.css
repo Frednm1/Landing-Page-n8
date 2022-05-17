@@ -485,7 +485,7 @@ body{
     }
     .menu-mobile-content li{
         
-        width: 99.23%;
+        width: 100%-20px;
         
     }
     .menu-mobile-content a{
