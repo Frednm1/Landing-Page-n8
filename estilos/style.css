@@ -220,7 +220,7 @@ body{
         grid-area: seletor;
         text-align: center;
         background-color: white;
-        height: 310px;
+        height: 320px;
         line-height: 20px;
         border: #c8c5c5 1px solid;
         border-radius: 20px;
@@ -235,7 +235,7 @@ body{
     .nome-plano h2{
         line-height: none;
         margin-top: 0;
-        font-size: 24px;
+        font-size: 23px;
         padding:20px 0px 20px 0px;
     }
     .valor{
@@ -538,6 +538,10 @@ body{
         width: 530px;
         margin: 0 auto;
     }
+    .seletor2{
+        width: 530px;
+        margin: 0 auto;
+    }
 
     /*seletor*/
 
@@ -638,4 +642,75 @@ body{
         float: none;
     }
     /*footer*/
+}
+@media(max-width:380px){
+    /*endereco*/
+    .endereco{
+        width: 300px;
+        height: 1010px;
+    }
+    .endereco form h3{
+        font-size: 20px;
+        padding: 0;
+    }
+    .input1{
+        width: 200px;
+    }
+    .input2{
+        width: 120px;
+    }
+    .input3{
+        width: 40px;
+        font-size: 16px;
+    }
+    .balao2{
+        width: 260px;
+    }
+    /*endereco*/
+
+     /*seletor*/
+     .seletor{
+        width: 300px;
+    }
+    select{
+        width: 270px;
+    }
+    /*seletor*/
+
+    /*cartao*/
+    .cartao{
+        height: 520px;
+        width: 260px;
+     }
+     .cartao h2{
+         margin-top: 10px;
+     }
+     .cartao input{
+         width: 215px;
+     }
+     .cartao-input2{
+         width: 260px;
+         display: inline-block;
+         margin-bottom: 30px;
+     }
+     .cartao-input2 input{
+         width: 40px;
+         margin: auto;
+         display: inline-block;
+     }
+     .text-input2{
+        margin-left: 0px;
+     }
+     .botao{
+         width: 270px;
+     }
+     .cartao-spacing{
+        padding: 2px;
+    }
+     /*cartao*/
+
+     /*footer*/
+    .footer{
+        height: 840px;
+    }
 }

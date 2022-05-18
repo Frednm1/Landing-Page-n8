@@ -32,8 +32,6 @@ $(function(){
                 aux.fadeOut()
                 document.getElementById('arrow').src = "img/arrowDown.png"
             }
-                
-            
         })
         
     })
